@@ -1,91 +1,53 @@
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 .posts {
-  max-width: 720px;
-  margin: 5rem auto 0;
+  margin-top:2em;
 
-  img {
-    width: 238.62px;
-    height: 25.63px;
-    left: 372px;
-    top: 79.55px;
-    margin-bottom: 1rem;
-    
+  > a {
+    display:block;
   }
 
-  a {
-    display: block;
-    text-decoration: none;
-    & + a {
-      margin-top: 2rem;
-    }
+  a + a {
+    margin-top: 3rem;
+  }
 
-    strong {
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 68.52;
+  button {
+    border:none;
+    background:transparent;
+    font-weight:600;
+    font-size: 1.125rem;
+    color:var(--highlight);
+    margin-top:4rem;
+  }
 
-      font-family: Inter;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 1.75rem;
-      line-height: 34px;
-      text-align: justify;
-      letter-spacing: -0.5px;
-      color: var(--heading);
-    }
+}
 
-    p {
-      margin-top: 0.875rem;
-      left: 0%;
-      right: 28.57%;
-      top: 38.89%;
-      bottom: 40.74%;
+.post {
 
-      font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.125rem;
-      line-height: 22px;
+  strong {
+    font-size:1.75rem;
+    font-weight: bold;
+    color:var(--heading);
+  }
 
-      text-align: justify;
+  p{
+    margin-top:0.5rem;
+    font-size:1.125rem;
+  }
 
-      color: var(--body);
+  ul {
+    list-style: none;
+    margin-top:1.5rem;
+    display: flex;
+
+    & li {
+      font-size:0.875rem;
+
+      & svg {
+        margin-right: 0.5rem;
+      }
+
+      & + li {
+        margin-left: 1.625rem;
+      }
     }
   }
-}
-
-.info {
-  margin-top: 0.625rem;
-  display: flex;
-  color: var(--info);
-  font-size: 0.875rem;
-  span {
-    margin-left: 1rem;
-  }
-}
-
-.logoTipo {
-  margin-right: 0.2rem;
-  text-align: center;
-  align-items: center;
-  width: 1.125rem;
-  height: 1.125rem;
-}
-
-.link {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: justify;
-
-  color: var(--highlight);
-
-  text-decoration: none;
 }

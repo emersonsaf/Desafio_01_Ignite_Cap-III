@@ -39,7 +39,7 @@ export default function PostPage({ post }: PostProps) {
 
   const sizeWord = (post.data.content?.body.text).length
 
-  const timeToRead = ((((sizeWord / 10) * 60) / 200) / 60).toFixed();
+  const timeToRead = ((((sizeWord / 5) * 60) / 200) / 60).toFixed();
 
   return (
     <>
